@@ -9,9 +9,6 @@ class Rent implements IRent{
   @PrimaryColumn()
   id: string;
 
-  @Column()
-  total_price: number;
-
   @OneToOne(() => Car, car => car.id)
   car: Car
 
@@ -23,7 +20,7 @@ class Rent implements IRent{
   
   @Column()
   user_id: string;
-
+  
   @CreateDateColumn()
   created_at: string;
 

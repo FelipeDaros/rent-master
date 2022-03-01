@@ -12,10 +12,6 @@ export class CreateRent1646070415663 implements MigrationInterface {
                     isPrimary: true
                 },
                 {
-                    name: "total_price",
-                    type: "decimal"
-                },
-                {
                     name: "car_id",
                     type: "uuid"
                 },

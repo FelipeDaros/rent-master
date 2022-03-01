@@ -4,10 +4,9 @@ import { User } from "../../user/entity/User";
 
 interface IRent {
   id: string;
-  total_price: number;
   car_id: string;
   user_id: string;
-  created_at: string;
+  created_at: Date;
 }
 
 export { IRent }
