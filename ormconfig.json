@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "123",
+  "database": "estacionaaqui",
+  "entities": [
+     "src/modules/**/entity/*.ts"
+  ],
+  "migrations": [
+     "src/modules/migration/*.ts"
+  ],
+  "cli": {
+       "migrationsDir": "src/modules/migration"
+   }
+}
